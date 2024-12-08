@@ -27,6 +27,9 @@ h2{
 h3{
     font-size: 2.5rem;
 }
+img{
+    max-width: 100%;
+}
 
 /*utilities*/
 .container{
@@ -35,6 +38,11 @@ h3{
     margin-left: auto;
     margin-right: auto;
 }
+@media(max-width:768px){
+    .container{
+        width: 95%;}
+    }
+        
 /*header*/
 .site-header{
     background-image: url(./img/header.jpg);
@@ -49,16 +57,32 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
+@media(max-width:768px){
+    .menu-bar{
+        flex-direction: column;
+    justify-content: center;}
+}
 /*about*/
 .about-container{
     display: flex;
+    flex-direction: row;
 }
+@media(max-width:768px){
+    .about-container{
+        flex-direction: column;}
+    }
+    h2,h3{
+        text-align: center;
+    }
+    .about-container img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 /*houses*/
 .houses-items{
     background-color: #dedede;
     border: 1px solid grey;
-}
-.houses-items-imgs{
 }
 .houses-items-text{
     padding: 2rem;
