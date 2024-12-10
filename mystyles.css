@@ -48,7 +48,7 @@ img{
     background-image: url(./img/header.jpg);
     background-position: center center;
     background-size: cover;
-    color:  white;
+    color:  rgb(112, 35, 35);
     height: 40vh;
     text-align: center;
 }
@@ -110,4 +110,20 @@ li{
 }
 .houses-items-imgs{
     margin-right: 5 rem;
+}
+/*contact*/
+.contact-header{
+    color: orange;
+
+}
+.containers{
+    display: block;
+    background-color: orange;
+    padding: 5px;
+    text-align: center;  
+}
+/*about*/
+.about-header{
+    display: inline;
+    color: red;
 }
