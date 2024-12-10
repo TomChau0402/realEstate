@@ -80,6 +80,12 @@ img{
         margin-right: auto;
     }
 /*houses*/
+.houses-container{ 
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
 .houses-items{
     background-color: #dedede;
     border: 1px solid grey;
