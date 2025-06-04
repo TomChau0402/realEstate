@@ -192,7 +192,245 @@ section h2 {
 .btn-details:hover {
     background-color: var(--secondary-color);
 }
+/* === Global Styles === */
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --accent: #e74c3c;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+    --gray: #95a5a6;
+    --font-main: 'Roboto', sans-serif;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: #f9f9f9;
+}
+
+/* === Header Styles === */
+.blog-header {
+    background-color: var(--primary);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.blog-containers {
+    width: 90%;
+    max-width: 1200px;
+    margin:  auto;
+}
+
+.bar-menu {
+    display: flex;
+    flex-direction: auto;
+    align-items: right;
+    gap: 2rem;
+}
+.bar-menu-item {
+    justify-content: space-between;
+    
+}
+
+.bar-menu h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    color: var(--secondary);
+    background-color: rgba(255,255,255,0.1);
+}
+
+.bar-menu img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* === Main Content Styles === */
+main.blog-containers {
+    padding: 4rem 0;
+}
+
+main h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+main p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    color: var(--dark);
+    text-align: center;
+}
+
+fieldset {
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+legend {
+    font-size: 1.6rem;
+    color: var(--primary);
+    padding: 0 1rem;
+    font-weight: 500;
+}
+
+.blg-form {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-family: var(--font-main);
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 2px rgba(52,152,219,0.2);
+}
+
+/* === Footer Styles === */
+footer {
+    background-color: var(--primary);
+    color: rgb(186, 35, 35);
+    padding: 3rem 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-container p {
+    font-size: 1.4rem;
+    color: var(--light);
+}
+
+.footer-container span {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.privacy-text {
+    display: flex;
+    gap: 2rem;
+}
+
+.icons-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.icon-container:hover {
+    background-color: var(--secondary);
+}
+
+.icon-container i {
+    font-size: 1.6rem;
+    color: white;
+}
+
+/* === Responsive Design === */
+@media (min-width: 768px) {
+    .bar-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .bar-menu h1 {
+        text-align: left;
+        font-size: 3.2rem;
+    }
+    
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    fieldset {
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bar-menu img {
+        max-height: 400px;
+    }
+    
+    main h2 {
+        font-size: 3rem;
+    }
+}
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .menu-bar {
